@@ -1,0 +1,6 @@
+<launch>
+
+ <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" /> 
+ <node name="led_control" type="led_control.py" pkg="tele_operation" output="screen"/>
+
+</launch>

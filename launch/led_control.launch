@@ -1,0 +1,7 @@
+<launch>
+
+ <node name="led_control" type="led_control.py" pkg="tele_operation" output="screen"/>
+ <node name="wiringPi" type="wiringPiSetup.py" pkg="tele_operation" output="screen" launch-prefix="sudo"/>
+
+</launch>
+
